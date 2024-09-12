@@ -19,34 +19,38 @@
                 <li><a href="#settings">Settings</a></li>
             </ul>
         </nav>
+    </header>
     
     <main>
-<!-- Swipeable Cards Section -->
-<section id="match-section">
-    <div class="card-container">
-        <div class="card">
-            <img src="profilepics/user1.jpeg" alt="Travel Guide 1">
-            <div class="card-info">
-                <h2>John Doe, 23</h2>
-                <p>Hi! I’m solo traveling in Europe and would like to meet new people! Hit me up, if you want to hang out and show me around your city. 😎</p>
+        <!-- Swipeable Cards Section -->
+        <section id="match-section">
+            <div class="card-container">
+                <div class="card">
+                    <img src="profilepics/user1.jpeg" alt="Travel Guide 1">
+                    <div class="card-info">
+                        <h2>John Doe, 23</h2>
+                        <p>Hi! I’m solo traveling in Europe and would like to meet new people! Hit me up, if you want to hang out and show me around your city. 😎</p>
 
-                <!-- Button to toggle more info -->
-                <button class="toggle-btn" onclick="toggleInfo(this)">More Info ⬇️</button>
-                
-                <!-- Hidden section, revealed after swipe/click -->
-                <div class="more-info" style="display: none;">
-                    <p>Languages: English, French</p>
-                    <p>Interests: Photography, F1, Music</p>
-                    <p>Staying in Tokyo for 5 Days</p>
+                        <!-- Button to toggle more info -->
+                        <button class="toggle-btn" onclick="toggleInfo(this)">More Info ⬇️</button>
+                        
+                        <!-- Hidden section, revealed after swipe/click -->
+                        <div class="more-info" style="display: none;">
+                            <p>Languages: English, French</p>
+                            <p>Interests: Photography, F1, Music</p>
+                            <p>Staying in Bordeaux for 5 Days</p>
+                            <p>Travel plans: I want to see a vineyard and surf in Lacanau!</p>
+                        </div>
+
+                        <!-- Like/Dislike buttons placed on different lines -->
+                        <div class="feedback-container">
+                            <button class="dislike-btn">👎</button>
+                            <button class="like-btn">👍</button>
+                        </div>
+                    </div>
                 </div>
-
-                <button class="dislike-btn">👎</button>
-                <button class="like-btn">👍</button>
             </div>
-        </div>
-    </div>
-
-</section>
+        </section>
 
         <!-- Profile Section -->
         <section id="profile-section">
