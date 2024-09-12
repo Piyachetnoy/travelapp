@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff6f61;
+    color: #333;
+}
+
+header {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#match-section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 300px;
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-info {
+    padding: 15px;
+}
+
+.card-info h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #000;
+    text-align: left; 
+}
+
+
+.card-info p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+    text-align: left; 
+    padding: 3px;
+
+}
+
+.like-btn, .dislike-btn {
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.toggle-btn {
+    background-color: #398bb7; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove borders */
+    padding: 10px 20px; /* Add some padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Keep it inline */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.toggle-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.like-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.dislike-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+#search-section {
+    margin: 50px 0;
+}
+
+#search-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#search-form label {
+    margin-right: 10px;
+}
+
+#search-form input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#search-form button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-results {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#profile-section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.profile {
+    display: inline-block;
+    text-align: left;
+    background-color: #fff;
+    color: #777;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+

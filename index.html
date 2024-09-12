@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOMI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HOMI</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#matches">Matches</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    
+    <main>
+<!-- Swipeable Cards Section -->
+<section id="match-section">
+    <div class="card-container">
+        <div class="card">
+            <img src="profilepics/user1.jpeg" alt="Travel Guide 1">
+            <div class="card-info">
+                <h2>John Doe, 23</h2>
+                <p>Hi! I’m solo traveling in Europe and would like to meet new people! Hit me up, if you want to hang out and show me around your city. 😎</p>
+
+                <!-- Button to toggle more info -->
+                <button class="toggle-btn" onclick="toggleInfo(this)">More Info ⬇️</button>
+                
+                <!-- Hidden section, revealed after swipe/click -->
+                <div class="more-info" style="display: none;">
+                    <p>Languages: English, French</p>
+                    <p>Interests: Photography, F1, Music</p>
+                    <p>Staying in Tokyo for 5 Days</p>
+                </div>
+
+                <button class="dislike-btn">👎</button>
+                <button class="like-btn">👍</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+        <!-- Profile Section -->
+        <section id="profile-section">
+            <h2>Your Profile</h2>
+            <div class="profile">
+                <img src="profilepics/myself.png" alt="Your Profile Picture">
+                <h3>Your Name</h3>
+                <p>Location: Bangkok</p>
+                <p>Languages: Thai, English</p>
+                <p>Interests: Hiking, Food Tours, Local Experiences</p>
+                <button>Edit Profile</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HOMI. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
