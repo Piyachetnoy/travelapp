@@ -64,6 +64,7 @@ main {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
 }
 
 .card img {
@@ -90,6 +91,7 @@ main {
     padding: 3px;
 }
 
+/* Buttons */
 .like-btn, .dislike-btn {
     border: none;
     padding: 10px 15px;
@@ -97,25 +99,6 @@ main {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-}
-
-.toggle-btn {
-    background-color: #398bb7; /* Green background */
-    color: white; /* White text */
-    border: none; /* Remove borders */
-    padding: 10px 20px; /* Add some padding */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Keep it inline */
-    font-size: 16px; /* Increase font size */
-    margin: 4px 2px; /* Add some margin */
-    cursor: pointer; /* Add a pointer cursor on hover */
-    border-radius: 5px; /* Add rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-.toggle-btn:hover {
-    background-color: #45a049; /* Darker green on hover */
 }
 
 .like-btn {
@@ -126,6 +109,26 @@ main {
 .dislike-btn {
     background-color: #f44336;
     color: white;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    background-color: #398bb7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #45a049;
 }
 
 /* Search Section Styles */
@@ -195,7 +198,7 @@ main {
 /* Register Section Styles */
 #register-section {
     margin-top: 20px;
-    max-width: 800px; /* Limit width to keep form centered */
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -244,7 +247,7 @@ button[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    align-self: center; /* Center the button */
+    align-self: center;
 }
 
 button[type="submit"]:hover {
@@ -258,4 +261,28 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+/* Card Animation Styles */
+.slide-out-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slide-out-right {
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slide-in {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
 }

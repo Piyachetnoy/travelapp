@@ -1,13 +1,4 @@
-function toggleInfo(button) {
-    const moreInfo = button.nextElementSibling;
-    if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
-        moreInfo.style.display = "block"; // Show the hidden content
-        button.textContent = "Less Info ⬆️"; // Change button text
-    } else {
-        moreInfo.style.display = "none"; // Hide the content again
-        button.textContent = "More Info ⬇️"; // Reset button text
-    }
-}
+// scripts.js
 
 // Array of profiles
 const profiles = [
@@ -33,6 +24,7 @@ const profiles = [
 ];
 
 let currentProfileIndex = 0;
+let isAnimating = false;
 
 // Function to load the current profile
 function loadProfile(index) {
@@ -47,12 +39,37 @@ function loadProfile(index) {
 }
 
 // Function to go to the next profile
-function nextProfile() {
-    currentProfileIndex++;
-    if (currentProfileIndex >= profiles.length) {
-        currentProfileIndex = 0; // Loop back to the first profile if at the end
-    }
-    loadProfile(currentProfileIndex);
+function nextProfile(direction = 'left') {
+    if (isAnimating) return; // Prevent rapid clicks from causing issues
+    isAnimating = true;
+
+    const card = document.querySelector('.card');
+    
+    // Determine slide out direction
+    const slideOutClass = direction === 'left' ? 'slide-out-left' : 'slide-out-right';
+    card.classList.add(slideOutClass);
+    
+    // Wait for the animation to complete
+    setTimeout(() => {
+        // Update the current profile index
+        currentProfileIndex++;
+        if (currentProfileIndex >= profiles.length) {
+            currentProfileIndex = 0; // Loop back to the first profile if at the end
+        }
+
+        // Load the new profile
+        loadProfile(currentProfileIndex);
+
+        // Reset the card's position
+        card.classList.remove(slideOutClass);
+        card.classList.add('slide-in');
+        
+        // Wait for the slide-in animation to complete before enabling further animations
+        setTimeout(() => {
+            card.classList.remove('slide-in');
+            isAnimating = false;
+        }, 500);
+    }, 500); // Match this duration to the CSS transition duration
 }
 
 // Load the initial profile
