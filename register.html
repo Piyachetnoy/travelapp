@@ -1,0 +1,72 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOMI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HOMI</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#matches">Matches</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <!-- Link to the separate register page -->
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Registration Section -->
+        <section id="register-section">
+            <h2>Register</h2>
+            <!-- Add enctype attribute to handle file uploads -->
+            <form action="register.php" method="post" enctype="multipart/form-data">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <!-- <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required> -->
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="period">Period:</label>
+                <input type="text" id="period" name="period" required>
+
+                <label for="languages">Languages:</label>
+                <input type="text" id="languages" name="languages" placeholder="e.g., English, Thai" required>
+
+                <label for="interests">Interests:</label>
+                <input type="text" id="interests" name="interests" placeholder="e.g., Hiking, Food Tours" required>
+
+                <!-- Picture Upload Section -->
+                <label for="profile-picture">Profile Picture:</label>
+                <input type="file" id="profile-picture" name="profile-picture" accept="image/*" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HOMI. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
