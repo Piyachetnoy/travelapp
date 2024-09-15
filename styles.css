@@ -350,3 +350,23 @@ footer {
     border-radius: 10px 10px 0 0; /* Round the top corners to match card style */
     object-fit: cover;
 }
+/* Email and Password Field Styles */
+form input[type="email"],
+form input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+form label {
+    font-size: 16px;
+    color: #333;
+}
