@@ -13,7 +13,7 @@ const profiles = [
     },
     {
         img: 'profilepics/user2.jpeg',
-        name: 'Jane Smith, 28',
+        name: 'Jane Smith, 20',
         bio: 'Explorer at heart! Traveling around Asia to experience new cultures and food.',
         languages: 'Languages: English, Japanese',
         interests: 'Interests: Cooking, Hiking, Yoga',
@@ -31,7 +31,7 @@ const profiles = [
     },
     {
         img: 'profilepics/user4.jpeg',
-        name: 'Carlos Rivera, 26',
+        name: 'Carlos Rivera, 22',
         bio: 'Adventure seeker and part-time photographer. Always up for new experiences!',
         languages: 'Languages: Spanish, French',
         interests: 'Interests: Photography, Surfing, Climbing',
