@@ -342,3 +342,11 @@ footer {
     visibility: hidden;
     opacity: 0;
 }
+
+/* Mission Card Image Styles */
+.mission-card img.mission-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Round the top corners to match card style */
+    object-fit: cover;
+}
